@@ -5,7 +5,7 @@ In the field of algorithmic fairness, significant attention has been put on grou
 
 #How to run this code
 Depending on the task, you need first to train models. For this purpose, you can run ROAD and BROAD for the local fairness objective using the following command:
-# Compas
+## Compas
 python3 compass.py 5 0.7 cuda:0 ROAD TEST_COMPAS_ROAD_10_200 20 10 10 10
 # Law
 python3 law.py 5 0.7 cuda:0 ROAD TEST_LAW_ROAD_10_200 20 10 10 10
