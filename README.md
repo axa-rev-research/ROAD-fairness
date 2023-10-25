@@ -19,8 +19,9 @@ python3 german.py 5 0.7 cuda:0 ROAD TEST_GERMAN_ROAD_10 20 10 10 10
 ```
 - ### Drift Experiment
 For the adult drift experiment, you can run this command:
+```bash
 python3 adult_shifted_EO.py 5 0.7 cuda:0 ROAD_100 TEST_ADULT_ROAD_10_100_12_20 20 10 10 10
-
+```
 ## Details of the hyperparameters
 Here are listed the different arguments:
 
