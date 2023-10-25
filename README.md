@@ -6,12 +6,17 @@ In the field of algorithmic fairness, significant attention has been put on grou
 ## How to run this code
 Depending on the task, you need first to train models. For this purpose, you can run ROAD or BROAD for the local fairness objective using the following command:
 - ### Compas
+```bash
 python3 compass.py 5 0.7 cuda:0 ROAD TEST_COMPAS_ROAD_10_200 20 10 10 10
+```
 - ### Law
+```bash
 python3 law.py 5 0.7 cuda:0 ROAD TEST_LAW_ROAD_10 20 10 10 10
+```
 - ### German
+```bash
 python3 german.py 5 0.7 cuda:0 ROAD TEST_GERMAN_ROAD_10 20 10 10 10
-
+```
 - ### Drift Experiment
 For the adult drift experiment, you can run this command:
 python3 adult_shifted_EO.py 5 0.7 cuda:0 ROAD_100 TEST_ADULT_ROAD_10_100_12_20 20 10 10 10
