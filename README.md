@@ -16,9 +16,6 @@ python3 german.py 5 0.7 cuda:0 ROAD TEST_GERMAN_ROAD_10 20 10 10 10
 For the adult drift experiment, you can run this command:
 python3 adult_shifted_EO.py 5 0.7 cuda:0 ROAD_100 TEST_ADULT_ROAD_10_100_12_20 20 10 10 10
 
-## How to display the results
-you can execute the jupyter notebook in the notebook folder: notebooks/plot_LAW.ipynb, notebooks/plot_DRO_COMPAS.ipynb, notebooks/plot_DRO_GERMAN.ipynb or plot_drifted.ipynb
-
 ## Details of the hyperparameters
 Here are listed the different arguments:
 
@@ -34,4 +31,6 @@ Here are listed the different arguments:
 10) number of training loops (nb_iter_s iterations) of the  training sensitive learning model $g_{w_g}$
 11) number of training loops (nb_iter_r iterations) of the  training ratio $r_{w_r}$
 
+## How to display the results
+You can execute the jupyter notebook in the notebook folder: notebooks/plot_LAW.ipynb, notebooks/plot_DRO_COMPAS.ipynb, notebooks/plot_DRO_GERMAN.ipynb or plot_drifted.ipynb
 
