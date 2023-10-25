@@ -14,14 +14,21 @@ python3 german.py 5 0.7 cuda:0 ROAD TEST_GERMAN_ROAD_10_200 20 10 10 10
 
 ### Drift Experiment
 For the adult drift experiment you run this command:
-python3 adult_shifted_EO.py 5 0.7 cuda:2 ROAD_100 TEST_ADULT_ROAD_10_100_12_20 20 10 10 10
+python3 adult_shifted_EO.py 5 0.7 cuda:0 ROAD_100 TEST_ADULT_ROAD_10_100_12_20 20 10 10 10
 
 ## Details of the hyperparameters
 Here are listed the different arguments:
 
-- Item 1
-- Item 2
-- Item 3
-  - Sub Item 1
-  - Sub Item 2
-   
+- 1) name of the selected dataset (either compass.py,  law.py, german.py or adult_shifted_EO.py)
+- 2) maximum of the $\lambda$ hyperparameter (weight applied on the fairness component)
+- 3) maximum of the $\tau$ hyperparameter (weight applied on the KL component)
+- 4) name of the selected GPU (i.e., cuda:0, cuda:1, etc..)
+- 5) maximum of the $\tau$ hyperparameter (weight applied on the KL component)
+- 6) the desired method selected (i.e., ROAD or BROAD)
+- 7) name of the output file
+- 8) number of discretizations of lambda
+- 9) number of discretizations of tau
+- 10) number of training loops (nb_iter_s iterations) of the  training sensitive learning model $g_{w_g}$
+- 11) number of training loops (nb_iter_r iterations) of the  training ratio $r_{w_r}$
+
+
